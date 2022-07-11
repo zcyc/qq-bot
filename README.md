@@ -16,7 +16,7 @@ vim qq-bot/conf/config.toml
 ### 2.启动机器人
 
 ```bash
-go build qq-bot/cmd/qq_bot
+go run cmd/qq_bot/main.go
 ```
 
 ## 程序流程
