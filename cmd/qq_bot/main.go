@@ -7,7 +7,7 @@ import (
 	"log"
 	"qq-bot/common/websocket"
 	"qq-bot/integration/qq"
-	"qq-bot/internal/facade/at_message_facade"
+	"qq-bot/internal/facade/at_message"
 )
 
 func main() {
@@ -52,7 +52,7 @@ func main() {
 	}
 
 	// 注册消息处理器
-	intent := at_message_facade.NewHandler(botClient)
+	intent := at_message.NewHandler(botClient)
 	if err = websocket.NewSessionManager().Start(ap, botToken, intent); err != nil {
 		panic(err)
 	}

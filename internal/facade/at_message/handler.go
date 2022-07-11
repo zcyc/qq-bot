@@ -1,4 +1,4 @@
-package at_message_facade
+package at_message
 
 import (
 	"context"
@@ -17,7 +17,7 @@ func NewHandler(botClient *qq.Bot) dto.Intent {
 			s := hitokoto.Get()
 			_, _ = botClient.SendMessage(ctx, data.ChannelID, &dto.ChannelMessage{MsgID: data.ID, Content: s})
 		}
-		if strings.HasSuffix(data.Content, "> 涩图") {
+		if strings.HasSuffix(data.Content, "> 图来") {
 			//p := lolicon.Get()
 			p := "https://c.wallhere.com/photos/bc/64/snow_snowflake_winter-626454.jpg!d"
 			res, err := botClient.SendMessage(ctx, data.ChannelID, &dto.ChannelMessage{MsgID: data.ID, Image: p})
