@@ -10,7 +10,7 @@
 ### 1.修改配置
 
 ```
-vim qq-bot/conf/config.toml
+vim conf/config.toml
 ```
 
 ### 2.启动机器人
@@ -97,7 +97,7 @@ wss://api.sgroup.qq.com/websocket/
 修改第`36`行超时时间。
 
 ```
-vim qq-bot/integration/qq/client.go
+vim integration/qq/client.go
 ```
 
 ## TODO
