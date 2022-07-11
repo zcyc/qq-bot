@@ -110,6 +110,8 @@ vim integration/qq/client.go
 * 日志打印
 * 监控、报警
 * 单元测试
+* 通过 redis 限制机器人调用频率
+* 通过 postgres 自建语料库和图片库
 
 ## 参考
 
