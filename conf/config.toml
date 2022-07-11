@@ -1,0 +1,23 @@
+app_name = "qq-bot"
+
+log_level = "DEBUG"
+sand_box_mode = "true"
+
+[bot]
+app_id = 123
+token = "abc"
+secret = "efg"
+
+[db]
+host = "127.0.0.1"
+port = "5432"
+user = "user"
+password = "123"
+name = "qq_bot"
+
+[redis]
+host = "127.0.0.1"
+pwd = ""
+port = 6379
+db = 0
+
